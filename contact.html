@@ -3,15 +3,19 @@
 <head>
 	<title>Contact Kyle Wagner</title>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 	<body>
 		<header>
 			<div><img src="img/logo.png" class="img-responsive" alt="logo">
 			</div>
 			<nav> 
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
 			</nav>
 		</header>
 		<h1>Contact</h1>
@@ -30,12 +34,16 @@
 			<a href="https://codepen.io/indy560/pen/GXabYj" target="_blank">My Codepen page</a>
 		</div>
 		<div>
-			<p>Subscribe to my newsletter</p>
-			<form action="/login-form-action" method="post">
+			<h2>Send me a message</h2>
+			<form action="/login-form-action" method="post" id="message">
 				<label for="email">Your E-mail address:</label>
 				<input type="email" id="email" name="user_email">
-				<button type="submit">Register</button>
+				<br>
+				<textarea rows="4" cols="50" name="comment" form="message"></textarea>
+				<br>
+				<button type="submit">Contact me</button>
 			</form>
+
 		</div>
 	</body>
 </html>
