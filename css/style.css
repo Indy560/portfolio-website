@@ -16,12 +16,23 @@
 	background: rgba(5, 103, 110, 0.);
 }
 .wrapper{
+	margin-top: 120px;
 	width: 100%;
 	/*max-width: 1000px;*/
-	margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+	/*margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 	padding: 100px 20px;
 }
-
+.banner{
+	background-image: img/("banner.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .columns-container {
 	font-size: 0;
 }
@@ -72,7 +83,6 @@ h1 {
 	font-family: 'Raleway', sans-serif;/*font style and color settings*/
 	color: #008fc6;
 	line-height: 1.6;
-	margin-top: 120px;
 }
 
 h2 { 
@@ -80,9 +90,15 @@ h2 {
 	color: #008fc6;
 	line-height: 1.6;
 }
+h4{
+	font-family: 'Raleway', sans-serif;/*font style and color settings*/
+	color: #474747;
+	line-height: 1.6;
+	}
 
 header {
-    background-color: #eeeeeeff;
+    background-color: #FFFFFF;
+    outline: 3px solid #474747;
     position: fixed;
     z-index:1;
     top: 0;
@@ -115,18 +131,34 @@ header img{
 
 	margin-left: 40px;
 }
-
+#vertical-line{
+	width: 3px;
+	height: 110px;
+	background-color: #474747;
+}
+#social{
+	width: 30%;
+	height: 110px;
+	background-color: #008fc6;
+}
+.social_image{
+	margin: 6%;
+}
+nav{
+width: 70%;
+	}
+body{
+background-color: #eeeeeeff;
+}
 p{
 font-family: 'Raleway', sans-serif;/*font style and color settings*/
 	color: #474747;
 	line-height: 1.6;
-	background-color: #eeeeeeff;
     top: 0;
     margin-left: 40px;
     right: 0;
     text-align: left;
-    width: 70%
-	
+    width: 70%	
 }
 button, 
 .button:hover {
